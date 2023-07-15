@@ -61,10 +61,10 @@ function App() {
         hexColors.push(hex);
       }
   
+      // SAVE HEXCOLORS - save with position data
       console.log(hexColors);
 
     };
-    console.log("button clicked!")
   }
 
   return (
@@ -75,18 +75,19 @@ function App() {
 
         {file && 
         <div>
-          <p>
-            <img src={file} alt="file" />
-          </p>
-          <button onClick={handleConversion}>CONVERT TO PIXELS</button>
           <div>
+            <img src={file} alt="file" />
+          </div>
+          <div>
+          <button onClick={handleConversion}>CONVERT TO PIXELS</button>
+          </div>
           
-          <canvas ref={canvasRef} />
+          <div>
+            <canvas ref={canvasRef} />
           </div>
         </div>
 }
-        
-
+    
       </header>
     </div>
   );
