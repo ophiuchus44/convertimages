@@ -1,3 +1,3 @@
 # convertimages
 
-![Screenshot](eaxmple.png)
+![Alt Text](eaxmple.png)
